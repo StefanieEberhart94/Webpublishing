@@ -11,6 +11,7 @@
 	<?php
 	include("../nav.php");
 	?>
-	<p>Formular für eine Buchungsanfrage</p>
+	<p id="Text">Formular für eine Buchungsanfrage</br>Name,Mail,Anfragentext usw.</p>
+	<div id="Sidebar"><p>Kalender</p></div>
 </body>
 </html>
