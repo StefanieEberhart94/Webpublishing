@@ -11,6 +11,6 @@
 	<?php
 	include("../nav.php");
 	?>
-	<p>Welche Song können gespielt werden</p>
+	<p id="T-Ganz">Welche Song können gespielt werden</br>Titel,Genre usw.</p>
 </body>
 </html>
