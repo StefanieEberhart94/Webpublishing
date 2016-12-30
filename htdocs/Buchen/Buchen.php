@@ -11,7 +11,11 @@
 	<?php
 	include("../nav.php");
 	?>
-	<p id="Text">Formular für eine Buchungsanfrage</br>Name,Mail,Anfragentext usw.</p>
-	<div id="Sidebar"><p>Kalender</p></div>
+	<p id="Text">Anfrage und Kontakt in einem Formular: </br> </br>
+	Angaben, was sie ausfüllen können, z.B. Themen der Events, Gruppe/Alleinunterhalter oder Band </br>
+	Name, Email, Telefon, Wo und Wann: Wunschdatum, Was für ein Event/Thema, Wo ist das Event?, Wie lange dauert der Termin ungefährt?, Welche Musiker/Alleine oder Band, Musikwünsche/Stilrichtung </br>
+	Erklärung mit Ort: Ab wann es mehr Kostet. 
+	</p> 
+	<div id="Sidebar"><p>Papa's Kontakt mit Telefon, Email, Ansprechpartner </p></div>
 </body>
 </html>
