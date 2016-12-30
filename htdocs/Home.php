@@ -11,8 +11,14 @@
 	<?php
 	include("nav.php");
 	?>
-	<p id="Text">Hallo<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-	<iframe src="https://www.youtube.com/embed/AGRjnC7IkIM" allowfullscreen></iframe></p>
-	<div id="Sidebar"><p>Newsletter/Aktuelles</p></div>
+	<p id="Text">Mike and the Electronics <br/>
+	ist nicht nur Michael Eberhart als Alleinunterhalter, sondern auch verschiedene Besetzungen für Anlässe aller Art. </br>
+	Erfahren Sie auf den nachfolgenden Seiten mehr über Mike and the Electronics! </br>
+	Unterschrift der Band
+	<iframe src="https://www.youtube.com/embed/AGRjnC7IkIM" allowfullscreen></iframe>
+	</p>
+	<div id="Sidebar"><p>Newsletter/Aktuelles </br>
+	Impressum mit Allgemeinen Geschäftsbedingungen: Siehe Tanz- und Showband Prestige
+	</p></div>
 </body>
 </html>
