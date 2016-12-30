@@ -11,6 +11,9 @@
 	<?php
 	include("../nav.php");
 	?>
-	<p id="T-Ganz">Events<br/></p>
+	<p id="T-Ganz">Öffentliche Events von Mike and the Electronics:<br/></br>
+	z.B. Fasnet 2017 </br>
+	Zeitungsausschnitte, Bilder, Videos und Texte
+	</p>
 </body>
 </html>
