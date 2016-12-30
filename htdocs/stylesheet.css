@@ -6,20 +6,25 @@ body {
 }
 
 nav {
-	background-image: url("Bilder/Titelbild.jpg");
+	font-family: Agency FB;
+	font-size: 18px;
+	font-weight: bold;
+	background-image: url("Bilder/piano3.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 20em;
+	height: 15em;
 }
 #Navigation {
 	background-color:#800000;
 	height: 3.5em;
 	margin: auto;
-	margin-top: 10em;
+	margin-top: 5em;
 }
 h1 {
+	font-family: Agency FB;
+	font-size: 36px;
 	text-align: center; 
-	padding-top: 2em;
+	padding-top: 1em;
 	padding-bottom: 0;
 	color: #FFFACD;
 }
@@ -31,13 +36,13 @@ ul {
 li{
 	display: inline;
 	list-style-type: none;
-	font-size: 1.3em;
 	margin: 0;
 	padding-top: 1em;
 	padding-left: 1em;
 	padding-right: 1em;
 }
 .active {
+	font-size: 1.5em;
 	font-weight: bold;
 	text-shadow: 2px 2px #600000;
 }
@@ -52,7 +57,7 @@ li{
 	color: #FFFACD;
 	text-align: center;
 	background-color:#800000;
-	text-decoration: underline overline solid #FFFACD;
+	text-decoration: underline dotted #FFFACD;
 }
 #Text {
 	background-color: #FFFACD;
@@ -61,7 +66,7 @@ li{
 	width: 60%;
 	margin-top: -10px;
 	margin-right: 0;
-	border: 1px solid black;
+	border: 1px solid #800000;
 }
 #Sidebar {
 	width: 28%;
@@ -71,13 +76,11 @@ li{
 	margin-top: -10px;
 	margin-left: 0;
 	padding: 0;
-	border: 1px solid black;
 }
 #T-Ganz {
 	background-color: #FFFACD;
 	padding: 0em 1em 1em 1em;
 	margin-top: -10px;
-	border: 1px solid black;
 }
 iframe {
 	width: 560px; 
