@@ -82,9 +82,10 @@ li{
 	margin-top: -10px;
 }
 #Grafik {
-	height: 50em;
-	width: 50em;
-	float:center;
+	height: 20em;
+	width: 20em;
+	display: block;
+	margin: 0 auto;
 }
 iframe {
 	width: 560px; 
