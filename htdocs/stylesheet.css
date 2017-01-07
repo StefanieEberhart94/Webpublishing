@@ -81,6 +81,11 @@ li{
 	padding: 0em 1em 1em 1em;
 	margin-top: -10px;
 }
+#Grafik {
+	height: 50em;
+	width: 50em;
+	float:center;
+}
 iframe {
 	width: 560px; 
 	height: 315px;
