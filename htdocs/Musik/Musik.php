@@ -12,7 +12,7 @@
 	include("../nav.php");
 	?>
 	<p id="T-Ganz"></br> Stilrichtungen:
-	<img id="Grafik" src="Bilder/Stilrichtungen.JPG" alt="Stilrichtungen">
+	<img id="Grafik" src="../Bilder/Stilrichtungen.JPG" alt="Stilrichtungen">
 	</p>
 </body>
 </html>
