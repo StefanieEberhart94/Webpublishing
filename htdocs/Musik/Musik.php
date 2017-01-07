@@ -11,10 +11,8 @@
 	<?php
 	include("../nav.php");
 	?>
-	<p id="T-Ganz">Stilrichtungen: </br>
-	Deutsch/Schlager, Evergreens, Pop, Rock, Oldies, Instrumental, Dinnermusik und Loungemusik/Jazz </br> </br>
-	Showblöcke: </br>
-	Schlager, Neue Deutsche Welle, Disco, Pop, Rock
+	<p id="T-Ganz"></br> Stilrichtungen:
+	<img id="Grafik" src="Bilder/Stilrichtungen.JPG" alt="Stilrichtungen">
 	</p>
 </body>
 </html>
