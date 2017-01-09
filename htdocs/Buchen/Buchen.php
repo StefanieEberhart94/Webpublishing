@@ -12,8 +12,8 @@
 	include("../nav.php");
 	?>
 	<div id="Halb">
-	<p>Anfrage und Kontakt in einem Formular: </br> </br>
-	Angaben, was sie ausfüllen können, z.B. Themen der Events, Gruppe/Alleinunterhalter oder Band </br>
+	<p id="Überschrift">Anfrage und Kontakt in einem Formular: </p>
+	<p>Angaben, was sie ausfüllen können, z.B. Themen der Events, Gruppe/Alleinunterhalter oder Band </br>
 	Name, Email, Telefon, Wo und Wann: Wunschdatum, Was für ein Event/Thema, Wo ist das Event?, Wie lange dauert der Termin ungefährt?, Welche Musiker/Alleine oder Band, Musikwünsche/Stilrichtung </br>
 	Erklärung mit Ort: Ab wann es mehr Kostet. 
 	</p> 
