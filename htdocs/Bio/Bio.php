@@ -11,19 +11,22 @@
 	<?php
 	include("../nav.php");
 	?>
-	<p id="T-Ganz"> </br>Lebenslauf:<br/></br>
-	1963 Geburtsdatum</br>
-	1971 Beginn der musikalischen Ausbildung in der SK Binsdorf als Trompeter</br>
-	1977 Beginn mit E-Bass lernen+Mitspielen in verschiedenen Tanz & Unterhaltungsbands</br>
-	1981 Mitglied im Kreisverbandsjugendorchester ZAK</br>
-    	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Aushilfe als Trompeter in verschiedenen Vereinen überregional</br>
-	1981-1983 Bassist in einer bekannten Bigband im Kreis Rottweil</br>
-	1984 -1985 Mitglied als Trompeter im Luftwaffenmusikkorps ll in Karlsruhe</br>
-	1985 -1988 Mitglied in verschiedenen Bands als Trompeter und Bassist</br>
-	1992-2000 Trompeter/ Bassist in einer überregional bekannten Gala- und Tanzband</br>
-	1996- heute Dirigent in verschiedenen Blasorchester</br>
-	seit 2012 Klavierunterricht</br></br>
-	Fehlt noch: Fotos
-	</p>
+	<div id="Ganz">
+	<img id="BioBild" src="../Bilder/Bewerbungsfoto.JPG" alt="Michael Eberhart">
+		<p id="Überschrift">Lebenslauf von Michael Eberhart</p>
+		<table id="Bio">
+			<tr><td>1963</td><td>Geburtsdatum</td></tr>
+			<tr><td>1971</td><td>Beginn der musikalischen Ausbildung in der SK Binsdorf als Trompeter</td></tr>
+			<tr><td>1977</td><td>Beginn mit E-Bass lernen+Mitspielen in verschiedenen Tanz & Unterhaltungsbands</td></tr>
+			<tr><td>1981</td><td>Mitglied im Kreisverbandsjugendorchester ZAK</br>Aushilfe als Trompeter in verschiedenen Vereinen überregional</td></tr>
+			<tr><td>1981-1983</td><td>Bassist in einer bekannten Bigband im Kreis Rottweil</td></tr>
+			<tr><td>1984 -1985</td><td>Mitglied als Trompeter im Luftwaffenmusikkorps ll in Karlsruhe</td></tr>
+			<tr><td>1985 -1988</td><td>Mitglied in verschiedenen Bands als Trompeter und Bassist</td></tr>
+			<tr><td>1992-2000</td><td>Trompeter/ Bassist in einer überregional bekannten Gala- und Tanzband</td></tr>
+			<tr><td>1996- heute</td><td>Dirigent in verschiedenen Blasorchester</td></tr>
+			<tr><td>seit 2012</td><td>Klavierunterricht</td></tr>
+		</table>
+	<p>Fotos fehlen noch</p>
+	</div>
 </body>
 </html>
