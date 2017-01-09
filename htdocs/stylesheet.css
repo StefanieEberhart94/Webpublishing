@@ -1,6 +1,7 @@
 *{
 	margin: 1em 4% 3em 4%;
 }
+
 body {
 	background: url("Bilder/Holz2.png");
 }
@@ -14,12 +15,14 @@ nav {
 	background-repeat: no-repeat;
 	height: 15em;
 }
+
 #Navigation {
 	background-color:#800000;
 	height: 3.5em;
 	margin: auto;
 	margin-top: 5em;
 }
+
 h1 {
 	font-family: Agency FB;
 	font-size: 36px;
@@ -28,17 +31,20 @@ h1 {
 	padding-bottom: 0;
 	color: #FFFACD;
 }
+
 ul {
 	text-align: center;
 	padding: 0;
 	padding-top: 1em;
 }
+
 li{
 	display: inline;
 	list-style-type: none;
 	margin: 0;
 	padding-top: 1em;
 }
+
 .active {
 	font-size: 1.5em;
 	font-weight: bold;
@@ -52,45 +58,82 @@ li{
 	text-align: center;
 	background-color:#800000;
 }
+
 #Navigation a:hover {
 	color: #FFFACD;
 	text-align: center;
 	background-color:#800000;
 	text-decoration: underline dotted #FFFACD;
 }
-#Text {
+
+#Ganz {
+	background-color: #FFFACD;
+	padding: 0em 1em 1em 1em;
+}
+
+#Halb {
 	background-color: #FFFACD;
 	float: left;
-	padding: 0em 1em 1em 1em;
 	width: 60%;
-	margin-top: -10px;
+	padding: 0em 1em 1em 1em;
+	margin-top: 0;
 	margin-right: 0;
-	border: 1px solid #800000;
 }
+
 #Sidebar {
 	width: 28%;
 	height: 100%;
 	background-color:#FFFACD;
 	float: right;
-	margin-top: -10px;
+	margin-top: 0;
 	margin-left: 0;
 	padding: 0;
 }
-#T-Ganz {
-	background-color: #FFFACD;
-	padding: 0em 1em 1em 1em;
-	margin-top: -10px;
-}
+
 #Grafik {
 	height: 20em;
 	width: 20em;
 	display: block;
 	margin: 0 auto;
 }
+
 iframe {
 	width: 560px; 
 	height: 315px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+.fett {
+	font-weight: bold;
+	margin-left: 0;
+}
+
+#Überschrift {
+	font-family: Candara;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-top: 2em;
+	padding-bottom: 0;
+	margin-bottom: 0.7em;
+}
+
+#Bio {
+	font-family: Candara;
+	font-size: 1.1;
+	margin-top: 0;
+}
+
+td {
+	padding: 0.5em;
+}
+
+#BioBild {
+	width: 15em;
+	float: right;
+}
+
+p {
+	font-family: Candara;
+	font-size: 1.1em;
 }
