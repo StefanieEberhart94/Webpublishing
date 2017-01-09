@@ -14,7 +14,7 @@
 	<div id="Ganz">
 	<img id="BioBild" src="../Bilder/Bewerbungsfoto.JPG" alt="Michael Eberhart">
 		<p id="Überschrift">Lebenslauf von Michael Eberhart</p>
-		<table id="Bio">
+		<table id="BioTabelle">
 			<tr><td>1963</td><td>Geburtsdatum</td></tr>
 			<tr><td>1971</td><td>Beginn der musikalischen Ausbildung in der SK Binsdorf als Trompeter</td></tr>
 			<tr><td>1977</td><td>Beginn mit E-Bass lernen+Mitspielen in verschiedenen Tanz & Unterhaltungsbands</td></tr>
