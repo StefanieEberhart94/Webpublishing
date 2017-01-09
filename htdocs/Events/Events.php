@@ -11,8 +11,8 @@
 	<?php
 	include("../nav.php");
 	?>
-	<div id="Ganz"><p></br>Öffentliche Events von Mike and the Electronics:<br/></br>
-	z.B. Fasnet 2017 </br>
+	<div id="Ganz"><p id="Überschrift">Öffentliche Events von Mike and the Electronics:</p>
+	<p>z.B. Fasnet 2017 </br>
 	Zeitungsausschnitte, Bilder, Videos und Texte </br>
 	Leute sollen Posten können! </br>
 	Referenzen: Agenturen und besondere Auftritte, die jedes Jahr stattfinden!
