@@ -11,7 +11,7 @@
 	<?php
 	include("../nav.php");
 	?>
-	<div id="Ganz"><p></br> Stilrichtungen:
+	<div id="Ganz"><p id="Überschrift">Stilrichtungen:<p>
 	<img id="Grafik" src="../Bilder/Stilrichtungen.JPG" alt="Stilrichtungen">
 	</p>
 	</div>
