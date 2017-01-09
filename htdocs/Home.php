@@ -12,8 +12,8 @@
 	include("nav.php");
 	?>
 	<div id="Halb">
-	<p> </br>Mike and the Electronics <br/>
-	ist nicht nur Michael Eberhart als Alleinunterhalter, sondern auch verschiedene Besetzungen für Anlässe aller Art. </br>
+	<p id="Überschrift">Mike and the Electronics</p>
+	<p>ist nicht nur Michael Eberhart als Alleinunterhalter, sondern auch verschiedene Besetzungen für Anlässe aller Art. </br>
 	Erfahren Sie auf den nachfolgenden Seiten mehr über Mike and the Electronics! </br>
 	Unterschrift der Band
 	<iframe src="https://www.youtube.com/embed/AGRjnC7IkIM" allowfullscreen></iframe>
