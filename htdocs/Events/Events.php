@@ -11,11 +11,12 @@
 	<?php
 	include("../nav.php");
 	?>
-	<p id="T-Ganz"></br>Öffentliche Events von Mike and the Electronics:<br/></br>
+	<div id="Ganz"><p></br>Öffentliche Events von Mike and the Electronics:<br/></br>
 	z.B. Fasnet 2017 </br>
 	Zeitungsausschnitte, Bilder, Videos und Texte </br>
 	Leute sollen Posten können! </br>
 	Referenzen: Agenturen und besondere Auftritte, die jedes Jahr stattfinden!
 	</p>
+	<div>
 </body>
 </html>
