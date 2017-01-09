@@ -11,8 +11,9 @@
 	<?php
 	include("../nav.php");
 	?>
-	<p id="T-Ganz"></br> Stilrichtungen:
+	<div id="Ganz"><p></br> Stilrichtungen:
 	<img id="Grafik" src="../Bilder/Stilrichtungen.JPG" alt="Stilrichtungen">
 	</p>
+	</div>
 </body>
 </html>
