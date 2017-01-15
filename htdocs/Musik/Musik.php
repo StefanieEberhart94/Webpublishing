@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="de"> 
+<head> 
+	<title>Alleinunterhalter</title>
+	<meta name="author" content="Stefanie Eberhart, Bettina Haberstroh" />
+	<meta name="date" content="2016-11-20" />
+	<meta name="keywords" content="Musik"/>
+	<link type="text/css" rel="stylesheet" href="../stylesheet.css"/>
 </head>
 <body>
 	<?php
@@ -28,6 +36,7 @@
 		(von 20 – bis ca. 600 Personen - abhängig von den Örtlichkeiten)</p></br></br>
 	<p id="Farbe">Haben Sie das Richtige Gefunden?</p></br>
 	<p id="Mittig">Dann Buchen Sie uns!</p>
+	<div id="Button"><a id="button" href="../Buchen/Buchen.php">Hier</br>Klicken!!!</a></div>
 
 	</div>
 </body>
