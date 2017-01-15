@@ -58,7 +58,7 @@ li{
 	text-decoration: underline dotted #FFFACD;
 }
 
-
+  
 /*Textfelder und Text allgemein*/
 #Ganz {
 	background-color: #FFFACD;
@@ -88,6 +88,11 @@ p {
 }
 .fett {
 	font-weight: bold;
+	color: #800000;
+	margin-left: 0;
+}
+.schwarz {
+	font-weight: bold;
 	margin-left: 0;
 }
 #Überschrift {
@@ -110,8 +115,7 @@ p {
 	font-weight: bold;
 	font-size: 1.1em;
 	text-align:center;
-	border-color: #800000;
-	border-style: solid;
+	border: solid #800000;
 	margin-top: 0em;
 	margin-bottom: 0em;
 }
@@ -137,6 +141,27 @@ p {
 	margin-bottom: 0em;
 	font-style: italic;
 }
+#Seitentext {
+	font-family: Candara;
+	font-size: 1.0em;
+	margin-bottom: 0em;
+}
+#Button {
+    height: 50px;
+    width: 120px;
+    background-color:#800000;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin: auto;
+	text-align: center;
+	margin-top:0.5em;
+}
+#button {
+    text-decoration: none;
+    color: #FFFACD;
+    font-family: Candara;
+	font-size: 1.2em;
+}
 
 /*Home*/
 iframe {
@@ -148,7 +173,12 @@ iframe {
 }
 #Note {
 	width: 1.2em;
-	height: 1,2em;
+	height: 1.2em;
+	margin: 0 auto;
+}
+#pdf {
+	width: 1.1em;
+	height: 1.1em;
 	margin: 0 auto;
 }
 
@@ -176,4 +206,3 @@ td {
 	display: block;
 	margin: 0 auto;
 }
-
