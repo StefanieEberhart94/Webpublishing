@@ -45,26 +45,29 @@
 	
 	<p id="Farbe">INTERESSIERT?</p>
 	<p id="Mittig">Dann Buchen Sie uns!</p>
+	<div id="Button"><a id="button" href="../Buchen/Buchen.php">Hier</br>Klicken!!!</a></div>
 	</div>
 	
-	<div id="Sidebar"><p>	
+	<div id="Sidebar">	
 	<!--Newsletter-->
-	<span class="fett">Newsletter</span></br>
+	<p id="Seitentext"><span class="fett">Newsletter</span></br>
 	Abonnieren Sie unseren Newsletter, um die neuesten öffentliche Termine zu erhalten.
 	<form action="mailto:stefanie.eberhart@gmx.de" method="post">
 		Email-Adresse: <input type="text" name="Email-Adresse" value="" size="15" maxlength="30"></br>
 		Vorname: <input type="text" name="Vorname" value="" size="15" maxlength="30"></br>
 		Nachname: <input type="text" name="Nachname" value="" size="15" maxlength="30"></br>
 		<input type="Submit" name="Absenden" value="Absenden">
-	</form>
+	</form></p>
 	
 	<!--Impressum-->
-	<span class="fett"> Impressum</span></br>Mike and the Electronics</br>Michael Eberhart</br>Tel 07428/3417</br>
-	michael.eberhart1@gmx.de</br>Bei Buchungen gelten unsere Allgemeinen Geschäftsbedingungen:</br>Datei siehe Tanz- und Showband Prestige</p>
-	</p></br>
+	<p id="Seitentext"><span class="fett"> Impressum</span></br>
+	<span class="schwarz">Mike and the Electronics</span></br>Michael Eberhart</br>Tel. 07428/3417</br>
+	michael.eberhart1@gmx.de</br></br>Bei Buchungen gelten unsere</br> 
+	<a href="../agb.pdf"><img id="pdf" src="../Bilder/pdf.png" alt="Allgemeine Geschäftsbedingungen">Allgemeinen Geschäftsbedingungen.</a></p>
+	</br></p>
 	
 	<!--Aktuelles-->
-	<span class="fett">Aktuelles</span></br>Momentan gibt es noch keine Termine für 2017.</br></br></br>
-	</div>
+	<p id="Seitentext"><span class="fett">Aktuelles</span></br>Momentan sind noch keine Termine für 2017 bekannt.</br></br></br>
+	</div></p>
 </body>
 </html>
