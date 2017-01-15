@@ -84,6 +84,7 @@ li{
 p {
 	font-family: Candara;
 	font-size: 1.1em;
+	margin-bottom: 0em;
 }
 .fett {
 	font-weight: bold;
@@ -94,9 +95,48 @@ p {
 	font-weight: bold;
 	font-size: 1.2em;
 	padding-top: 2em;
+	margin-top: 0em;
 	margin-bottom: 0.7em;
 }
-
+#Fett {
+	font-family: Candara;
+	font-weight: bold;
+	font-size: 1.1em;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+#Rahmen {
+	font-family: Candara;
+	font-weight: bold;
+	font-size: 1.1em;
+	text-align:center;
+	border-color: #800000;
+	border-style: solid;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+#Farbe {
+	font-family: Candara;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #800000;
+	margin-top: 0em;
+	margin-bottom: 0em;
+	text-align: center;
+}
+#Mittig {
+	font-family: Candara;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 0em;
+	text-align: center;
+}
+#Kursiv {
+	font-family: Candara;
+	font-size: 1.0em;
+	margin-bottom: 0em;
+	font-style: italic;
+}
 
 /*Home*/
 iframe {
@@ -106,13 +146,19 @@ iframe {
 	margin-left: auto;
 	margin-right: auto;
 }
-
+#Note {
+	width: 1.2em;
+	height: 1,2em;
+	margin: 0 auto;
+}
 
 /*Biographie*/
-#BioTabelle {
+#Tabelle {
 	font-family: Candara;
-	font-size: 1.1;
-	margin-top: 0;
+	font-size: 1.1em;
+	margin-top: 0em;
+	margin-left: 0.7em;
+	margin-bottom: 0em;
 }
 td {
 	padding: 0.5em;
@@ -130,3 +176,4 @@ td {
 	display: block;
 	margin: 0 auto;
 }
+
