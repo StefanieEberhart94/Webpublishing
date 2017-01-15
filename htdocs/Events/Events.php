@@ -12,10 +12,11 @@
 	include("../nav.php");
 	?>
 	<div id="Ganz"><p id="Überschrift">Öffentliche Events von Mike and the Electronics:</p>
-	<p>z.B. Fasnet 2017 </br>
-	Zeitungsausschnitte, Bilder, Videos und Texte </br>
-	Leute sollen Posten können! </br>
-	Referenzen: Agenturen und besondere Auftritte, die jedes Jahr stattfinden!
+	<p>An diesen Terminen können Sie sich live ein Bild von uns machen.</br>
+	Zeitungsausschnitte, Bilder, Videos und Texte, z.B. Fasnet 2017</br>
+	Kommentarfunktion?</p></br></br>
+	<p id="Fett">Regelmäßige Auftritte:</p>
+	<p>Hier finden Sie in Kürze öffentliche Termine, die jährlich stattfinden.</p></br></br>
 	</p>
 	<!--Video, hier beispielhaft eingebaut.-->
 	<iframe src="https://www.youtube.com/embed/AGRjnC7IkIM" allowfullscreen></iframe>
