@@ -12,11 +12,11 @@
 	include("nav.php");
 	?>
 	<div id="Halb">
-	<p id="Mittig">Hey lieber Bandsuchender!</p>
-	<p>Du bist zurzeit auf der Suche nach einer Band, die Deine Party oder Dein Fest musikalisch begleiten  soll, und die verschiedenste Musikstile professionell abdecken kann, damit die Veranstaltung zu einem vollen Erfolg wird?</br></br>
-	Eventuell suchst Du sogar eine Band die einen ganz speziellen Stil abdecken soll.</br></br>
-	Wir können Dir hier auf Deiner persönlichen Suche nach einer geeigneten Formation mit unserer langjährigen Erfahrung im Musikgeschäft professionell weiterhelfen.</p></br>
-	<p id="Fett">Wir können Dir hier folgendes Anbieten:</p></br></br>
+	</br><p id="Mittig">Hallo lieber Bandsuchender!</p>
+	<p>Sie sind zurzeit auf der Suche nach einer Band, die Ihre Party oder Ihr Fest musikalisch begleiten  soll, und die verschiedenste Musikstile professionell abdecken kann, damit die Veranstaltung zu einem vollen Erfolg wird?</br></br>
+	Eventuell suchsen Sie sogar eine Band die einen ganz speziellen Stil abdecken soll.</br></br>
+	Wir können Ihnen hier auf Ihrer persönlichen Suche nach einer geeigneten Formation mit unserer langjährigen Erfahrung im Musikgeschäft professionell weiterhelfen.</p></br>
+	<p id="Fett">Wir können Ihnen hier folgendes Anbieten:</p></br></br>
 	
 	<p id="Rahmen">BAND – egal ob groß oder klein, wir finden die richtige Formation für Ihre Veranstaltung</p>
 	<p>Egal ob Sie eine große oder kleine Veranstaltung durchführen wollen, wir haben die richtige Musikformation für Sie angefangen von:</br>
