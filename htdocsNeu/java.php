@@ -1,3 +1,4 @@
+<!--Bild: BioBild in Bio.php-->
 <script>
 // Get the modal
 var modal = document.getElementById('myModal');
@@ -18,6 +19,7 @@ span.onclick = function() {
 }
 </script>
 
+<!--Bild: MusikGrafik in Musik.php-->
 <script>
 var modal = document.getElementById('myModal');
 var img2 = document.getElementById('MusikGrafik');
