@@ -12,25 +12,32 @@
 	include("../nav.php");
 	?>
 	<div id="Halb">
-	<p id="Überschrift">Anfrage und Kontakt in einem Formular: </p>
-	<p>Angaben, was sie ausfüllen können, z.B. Themen der Events, Gruppe/Alleinunterhalter oder Band </br>
-	Name, Email, Telefon, Wo und Wann: Wunschdatum, Was für ein Event/Thema, Wo ist das Event?, Wie lange dauert der Termin ungefährt?, Welche Musiker/Alleine oder Band, Musikwünsche/Stilrichtung </br>
-	Erklärung mit Ort: Ab wann es mehr Kostet. 
-	</p> 
+	<p id="Überschrift">Hier können Sie uns buchen:</p>
+	<p><form method="post" action="/formmail.php">
+	<label>Name<br><input type="text" name="Name"></label></br>
+	<label>Email<br><input type="text" name="Mail"></label></br>
+	<label>Telefon / Mobil<br><input type="text" name="Mobil"></label></br>
+	<textarea name="" cols="16" rows="3"></textarea>Art des Events</br>
+	<label>Wunschtermin<br><input type="text" name="Termin"></label></br>
+	<label>Ort der Veranstaltung<br><input type="text" name="Ort"></label></br>
+	<textarea name="" cols="16" rows="3"></textarea>Uhrzeit der Veranstaltung und ungefähre Dauer.</br>
+	<textarea name="" cols="16" rows="3"></textarea>Besetzungswunsch und/oder weitere Wünsche</br>
+	<textarea name="" cols="16" rows="3"></textarea>Wünsche: Musikwünsche und/oder Stilrichtungen</br>
+	<input type="submit" value="Buchung bestätigen.">
+	<p>Lesen Sie unsere allgemeinen Geschäftsbegingungen im Impressum rechts auf der Seite.</p>
+	</form></p></br>
 	</div>
 	<div id="Sidebar">
-	<p id="Seitentext"><span class="fett"> Kalender</span></br></br>
-	<?php
-	include("../Kalender/Kalender3.php");
-	?>
-		</br>
 	<!--Impressum-->
 	<p id="Seitentext"><span class="fett"> Impressum</span></br></br>
 	<span class="schwarz">Mike and the Electronics</span></br>Michael Eberhart</br>Tel. 07428/3417</br>
 	michael.eberhart1@gmx.de</br></br>Bei Buchungen gelten unsere</br> 
-	<a href="../agb.pdf"><img id="pdf" src="../Bilder/pdf.png" alt="Allgemeine Geschäftsbedingungen">Allgemeinen Geschäftsbedingungen.</a></p>
-	</br></p>
-	
+	<a href="../agb.pdf"><img id="pdf" src="../Bilder/pdf.png" alt="Allgemeine Geschäftsbedingungen">Allgemeinen Geschäftsbedingungen.</a></p></br>
+	<!--Kalender-->
+	<p id="Seitentext"><span class="fett"> Kalender</span></br></br>
+	<?php
+	include("../Kalender/Kalender3.php");
+	?></p>
 	</div>
 </body>
 </html>
