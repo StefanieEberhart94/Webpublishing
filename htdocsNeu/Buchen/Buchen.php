@@ -11,20 +11,20 @@
 	<?php
 	include("../nav.php");
 	?>
-	<div id="Halb">
-	<p id="Überschrift">Hier können Sie uns buchen:</p>
-	<p><form method="post" action="/formmail.php">
-	<label>Name<br><input type="text" name="Name"></label></br>
-	<label>Email<br><input type="text" name="Mail"></label></br>
-	<label>Telefon / Mobil<br><input type="text" name="Mobil"></label></br>
-	<textarea name="" cols="16" rows="3"></textarea>Art des Events</br>
-	<label>Wunschtermin<br><input type="text" name="Termin"></label></br>
-	<label>Ort der Veranstaltung<br><input type="text" name="Ort"></label></br>
-	<textarea name="" cols="16" rows="3"></textarea>Uhrzeit der Veranstaltung und ungefähre Dauer.</br>
-	<textarea name="" cols="16" rows="3"></textarea>Besetzungswunsch und/oder weitere Wünsche</br>
-	<textarea name="" cols="16" rows="3"></textarea>Wünsche: Musikwünsche und/oder Stilrichtungen</br>
+	<div id="Halb"></br>
+	<p id="Farbe">Buchungsanfrage:</p>
+	<p><form method="post" action="/formmail.php" ></p>
+	<p><label>Name<br><input type="text" name="Name"></label></br></p>
+	<p><label>Email<br><input type="text" name="Mail"></label></br></p>
+	<p><label>Telefon / Mobil<br><input type="text" name="Mobil"></label></br></p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Art des Events</br><textarea id="Buchen" name="" cols="50" rows="4"></textarea></br></p>
+	<p><label>Wunschtermin<br><input type="text" name="Termin"></label></br></p>
+	<p><label>Ort der Veranstaltung<br><input type="text" name="Ort"></label></br></p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uhrzeit der Veranstaltung und ungefähre Dauer</br><textarea name="" cols="50" rows="4"></textarea></br></p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Besetzungswunsch und/oder weitere Wünsche</br><textarea name="" cols="50" rows="4"></textarea></br></p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wünsche: Musikwünsche und/oder Stilrichtungen</br><textarea name="" cols="50" rows="4"></textarea></br></p>
 	<input type="submit" value="Buchung bestätigen.">
-	<p>Lesen Sie unsere allgemeinen Geschäftsbegingungen im Impressum rechts auf der Seite.</p>
+	<p>Lesen Sie unsere allgemeinen Geschäftsbegingungen im Impressum rechts auf der Seite für weitere Informationen.</p>
 	</form></p></br>
 	</div>
 	<div id="Sidebar">
