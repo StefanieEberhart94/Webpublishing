@@ -35,3 +35,35 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 </script>
+<!--Bild: Zeitung in Event.php-->
+<script>
+var modal = document.getElementById('myModal');
+var img3 = document.getElementById('Zeitung');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img3.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<!--Bild: Gitarre in Event.php-->
+<script>
+var modal = document.getElementById('myModal');
+var img4 = document.getElementById('Gitarre');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img4.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
