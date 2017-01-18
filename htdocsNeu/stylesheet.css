@@ -55,7 +55,7 @@ li{
 	color: #FFFACD;
 	text-align: center;
 	background-color:#800000;
-	text-decoration: underline dotted #FFFACD;
+	text-decoration: underline overline;
 }
 
   
@@ -128,6 +128,13 @@ p {
 	margin-bottom: 0em;
 	text-align: center;
 }
+#FarbeLinks {
+	font-family: Candara;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #800000;
+	margin-bottom: 0em;
+}
 #Mittig {
 	font-family: Candara;
 	font-size: 1.2em;
@@ -164,13 +171,7 @@ p {
 }
 
 /*Home*/
-iframe {
-	width: 560px; 
-	height: 315px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 #Note {
 	width: 1.2em;
 	height: 1.2em;
@@ -211,6 +212,36 @@ td {
 }
 #MusikGrafik:hover {opacity: 0.7;}
 
+/*Events*/
+#Balken {
+	width: 50em;
+	height: 0.1em;
+	background-color: #800000;
+	display: block;
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+iframe {
+	width: 560px; 
+	height: 315px;
+	margin-right: 0;
+}
+#Zeitung {
+	width: 20em;
+	float: right;
+	margin-top: 3em;
+	cursor: pointer;
+}
+#Zeitung:hover {opacity: 0.7;}
+
+#Gitarre {
+	width: 20em;
+	float: right;
+	cursor: pointer;
+	margin-top: 2em;
+}
+#Gitarre:hover {opacity: 0.7;}
 /*Popup Bild*/
 
 /* The Modal (background) */
@@ -233,7 +264,13 @@ td {
     width: 30%;
     max-width: 700px;
 }
-
+/* Modal Content für große Bilder (bei Events) */
+.modal-content-groß {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+}
 /* Caption of Modal Image */
 #caption {
     margin: auto;
@@ -300,7 +337,6 @@ td {
 	text-align: center;
 	
 }
-
 
 * html .calender,
 * + html .calender {
