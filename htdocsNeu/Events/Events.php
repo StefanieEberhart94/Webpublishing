@@ -11,14 +11,29 @@
 	<?php
 	include("../nav.php");
 	?>
-	<div id="Ganz"><p id="Überschrift">Öffentliche Events von Mike and the Electronics:</p>
+	<div id="Ganz">
+	<img id="Gitarre" src="../Bilder/gitarre.JPG" alt="Gitarre">
+	<p id="Überschrift">Öffentliche Events von Mike and the Electronics:</p>
 	<p>z.B. Fasnet 2017 </br>
 	Zeitungsausschnitte, Bilder, Videos und Texte </br>
 	Leute sollen Posten können! </br>
 	Referenzen: Agenturen und besondere Auftritte, die jedes Jahr stattfinden!
 	</p>
+	</br></br></br></br>
+	<div id="Balken"></div>
 	<!--Video, hier beispielhaft eingebaut.-->
+	<p id="FarbeLinks">Fasnet 2016: Ricardo mit Weißer Stern für Alcunar</p>
 	<iframe src="https://www.youtube.com/embed/AGRjnC7IkIM" allowfullscreen></iframe>
-	<div>
+	<img id="Zeitung" src="../Bilder/Zeitung.JPG" alt="Zeitungsartikel">
+	<div id="Balken"></div>
+	<!--Modal-->
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content-groß" id="img01">
+		<div id="caption"></div></div>
+	</div>
+	<?php
+	include("../java.php");
+	?>
 </body>
 </html>
