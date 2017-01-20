@@ -15,23 +15,77 @@
 	<p id="Überschrift">Hier können Sie uns buchen:</p>
 	
 	<img id="BandBild" src="../Bilder/Band.JPG" alt="Die Band">
-		<!-- The Modal -->
-	<div id="myModal" class="modal">
-	<span class="close">&times;</span>
-	<img class="modal-content-groß" id="img01">
-	<div id="caption"></div></div>
+
 	
-	<p><form method="post" action="../formmail.php">
-	<label><p class="TextBuchen">Name</p><input id="Leer" type="text" name="Name"></label></br>
-	<label><p class="TextBuchen">Email</p><input id="Leer" type="text" name="Mail"></label></br>
-	<label><p class="TextBuchen">Telefon / Mobil</p><input id="Leer" type="text" name="Mobil"></label></br>
-	<p class="TextBuchen">Art des Events</p><textarea id="Leer" name="" cols="22" rows="3"></textarea></br>
-	<label><p class="TextBuchen">Wunschtermin</p><input id="Leer" type="text" name="Termin"></label></br>
-	<label><p class="TextBuchen">Ort der Veranstaltung</p><input id="Leer" type="text" name="Ort"></label></br>
-	<p class="TextBuchen">Uhrzeit der Veranstaltung und ungefähre Dauer</p><textarea id="Leer" name="" cols="22" rows="3"></textarea></br>
-	<p class="TextBuchen">Besetzungswunsch und/oder weitere Wünsche</p><textarea id="Leer" name="" cols="22" rows="3"></textarea></br>
-	<p class="TextBuchen">Wünsche: Musikwünsche und/oder Stilrichtungen</p><textarea id="Leer" name="" cols="22" rows="3"></textarea></br>
-	<input id="BuchenButton" type="submit" value="Buchung bestätigen.">
+<?php
+	// Aufbau der Datenbankverbindung
+$mysql = new mysqli("localhost", "root", "", "musik2017");
+// $error enthält Fehlerausgaben, falls etwas schief geht.
+$error = "";
+if (isset($_POST['button'])) { // Neuer Kommentar!
+   // Sicheres Belegen der Variablen aus dem Request.
+   $name = trim(isset($_POST['name'])?$_POST['name']:"");
+   $mail = trim(isset($_POST['mail'])?$_POST['mail']:"");
+   $mobil = trim(isset($_POST['mobil'])?$_POST['mobil']:"");
+   $eventart = trim(isset($_POST['eventart'])?$_POST['eventart']:"");
+   $termin = trim(isset($_POST['termin'])?$_POST['termin']:"");
+   $ort = trim(isset($_POST['ort'])?$_POST['ort']:"");
+   $angebot = trim(isset($_POST['angebot'])?$_POST['angebot']:"");
+   $musikwunsch = trim(isset($_POST['musikwunsch'])?$_POST['musikwunsch']:"");
+   // Prüfen, ob alles ausgefüllt wurde.
+   if (empty($name) || empty($mail) || empty($mobil) || empty($eventart) || empty($termin) || empty($ort) || empty($angebot) || empty($musikwunsch)){
+      $error = "Bitte alle Felder ausfüllen! (Wenn Angaben nicht bekannt, Strich in das Feld)";
+   } else {
+      // Das eigentliche SQL Insert Statement als "Prepared Statement"
+      // Die Platzhalter (?) müssen noch mit Werten befüllt werden.
+      $insert = $mysql->prepare("INSERT INTO buchen (url, name, mail, mobil, eventart, termin, ort, angebot, musikwunsch, zeitpunkt)
+      			VALUES (?,?,?,?,?,?,?,?,?,now())");
+      // Befüllen der Parameter ("ss" gibt an, dass alle zwei Parameter Strings sind.)
+      $insert->bind_param("sssssssss", $_SERVER['PHP_SELF'], $name, $mail, $mobil, $eventart, $termin, $ort, $angebot, $musikwunsch);
+      // Statement an die Datenbank schicken.
+      $insert->execute();
+      // Ggf. Fehler in die $error-Variable übertragen.
+      if (!empty($insert->error)) $error = "DB ERROR: ".$insert->error;
+   }
+}
+?>
+
+<div id="comments">
+   <?php
+      // Falls es Fehler gibt, hier ausgeben.
+      if (!empty($error)) {
+                     echo ("<p>".$error."</p>");
+      }
+   ?>
+   <form method="post" action="">
+      Vor- und Nachname:</br> <input type="text" name="name" length="40" /><br/>
+	  E-Mail:</br> <input type="text" name="mail" length="20" /><br/>
+	  Telefon / Mobil:</br> <input type="text" name="mobil" length="20" /><br/>
+	  Ort der Veranstaltung:</br> <input type="text" name="ort" length="20" /><br/>
+	  Eventart (z.B. Hochzeit, Fasnet, ...):</br> <textarea type="text" name="eventart" cols="60" rows="5"></textarea><br/>
+	  Termin (Datum, Start und falls bekannt Länge der Veranstaltung):</br> <textarea type="text" name="termin" cols="60" rows="5"></textarea><br/>
+	  Besetzungswunsch und/oder weitere Wünsche:</br> <textarea type="text" name="angebot" cols="60" rows="5"></textarea><br/>
+	  Wünsche: Stilrichtungen und Songtitel:</br> <textarea type="text" name="musikwunsch" cols="60" rows="5"></textarea><br/>	  
+      <input type="submit" name="button" value="Buchungsanfrage bestätigen!"/>
+   </form>
+</div>
+
+<?php
+//Ausgabe von buchen
+// Wieder wird das SQL Select Statement vorbereitet.
+$query = $mysql->prepare("SELECT name,mail,mobil,eventart,termin,ort,angebot,musikwunsch,zeitpunkt FROM buchen WHERE url=?");
+// Als Parameter wird die aktuelle URL der Webseite übergeben.
+$query->bind_param("s", $_SERVER['PHP_SELF']);
+$query->execute();
+// Umgekehrt werden die Ergebnisspalten wieder Variablen zugewiesen.
+// Diese können dann bei der Ausgabe benutzt werden, siehe unten.
+$query->bind_result($name, $mail, $mobil, $eventart, $termin, $ort, $angebot, $musikwunsch, $zeitpunkt);
+// Falls es Fehler gibt, werden sie in $error vermerkt. Achtung, da da jetzt schon was
+// drin stehen kann, hängen wir uns hinten dran.
+if (!empty($query->error)) $error = "Insert Error: ".$error." / Query Error: ".$query->error;
+
+?>	
+	
 	<p>Lesen Sie unsere allgemeinen Geschäftsbegingungen im Impressum rechts auf der Seite.</p>
 	</form></p></br>
 	</div>
@@ -52,3 +106,4 @@
 	?>
 </body>
 </html>
+
