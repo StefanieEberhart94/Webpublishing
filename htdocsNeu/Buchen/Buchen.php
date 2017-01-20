@@ -12,11 +12,15 @@
 	include("../nav.php");
 	?>
 	<div id="Halb">
-	<p id="Überschrift">Hier können Sie uns buchen:</p>
-	
+	<p id="Überschrift">Hier können Sie eine Buchungsanfrage stellen:</p>
+	<p>Bitte füllen Sie alle Felder aus. Falls Sie bei einem Feld nichts eintragen können, 
+		z.B. weil gewisse Informationen fehlen, tragen Sie bitte ein "-" oder einen einzelnen Buchstaben ein.</br></br>
+		Sobald Sie auf Buchungsanfrage bestätigen drücken und sich alle Felder leeren, wurde die Anfrage an uns versendet.
+		Die Bearbeitung kann einige Tage dauern. Wir bitten um Verständnis.</br></br>
+		Lesen Sie unsere allgemeinen Geschäftsbegingungen (Im Impressum rechts)!</p></br></br>
 	<img id="BandBild" src="../Bilder/Band.JPG" alt="Die Band">
-
 	
+<!--Hier wird "Abspeichern von Formulardate" aus der Vorlesung in angepasster Form als Buchungsformular verwendet.-->
 <?php
 	// Aufbau der Datenbankverbindung
 $mysql = new mysqli("localhost", "root", "", "musik2017");
@@ -34,7 +38,7 @@ if (isset($_POST['button'])) { // Neuer Kommentar!
    $musikwunsch = trim(isset($_POST['musikwunsch'])?$_POST['musikwunsch']:"");
    // Prüfen, ob alles ausgefüllt wurde.
    if (empty($name) || empty($mail) || empty($mobil) || empty($eventart) || empty($termin) || empty($ort) || empty($angebot) || empty($musikwunsch)){
-      $error = "Bitte alle Felder ausfüllen! (Wenn Angaben nicht bekannt, Strich in das Feld)";
+      $error = "Bitte alle Felder ausfüllen! (Wenn Angaben nicht bekannt, Strich oder anderes Zeichen in das Feld)";
    } else {
       // Das eigentliche SQL Insert Statement als "Prepared Statement"
       // Die Platzhalter (?) müssen noch mit Werten befüllt werden.
@@ -51,42 +55,23 @@ if (isset($_POST['button'])) { // Neuer Kommentar!
 ?>
 
 <div id="comments">
-   <?php
-      // Falls es Fehler gibt, hier ausgeben.
+   <?php	// Falls es Fehler gibt, hier ausgeben.
       if (!empty($error)) {
                      echo ("<p>".$error."</p>");
       }
    ?>
    <form method="post" action="">
-      Vor- und Nachname:</br> <input type="text" name="name" length="40" /><br/>
-	  E-Mail:</br> <input type="text" name="mail" length="20" /><br/>
+      <p id="TextBuchen">Vor- und Nachname:</br> <input type="text" name="name" length="40" /><br/>
+	  E-Mail:</br> <input type="text" name="mail" length="20" /></br>
 	  Telefon / Mobil:</br> <input type="text" name="mobil" length="20" /><br/>
 	  Ort der Veranstaltung:</br> <input type="text" name="ort" length="20" /><br/>
 	  Termin (Datum, Start und falls bekannt Länge der Veranstaltung):</br> <textarea type="text" name="termin" cols="60" rows="5"></textarea><br/>
 	  Eventart (z.B. Hochzeit, Fasnet, ...):</br> <textarea type="text" name="eventart" cols="60" rows="5"></textarea><br/>
 	  Besetzungswunsch und/oder weitere Wünsche:</br> <textarea type="text" name="angebot" cols="60" rows="5"></textarea><br/>
-	  Wünsche: Stilrichtungen und Songtitel:</br> <textarea type="text" name="musikwunsch" cols="60" rows="5"></textarea><br/>	  
-      <input type="submit" name="button" value="Buchungsanfrage bestätigen!"/>
+	  Wünsche: Stilrichtungen und Songtitel:</br> <textarea type="text" name="musikwunsch" cols="60" rows="5"></textarea><br/>  
+      <input type="submit" name="button" value="Buchungsanfrage bestätigen!"/></p>
    </form>
 </div>
-
-<?php
-//Ausgabe von buchen
-// Wieder wird das SQL Select Statement vorbereitet.
-$query = $mysql->prepare("SELECT name,mail,mobil,eventart,termin,ort,angebot,musikwunsch,zeitpunkt FROM buchen WHERE url=?");
-// Als Parameter wird die aktuelle URL der Webseite übergeben.
-$query->bind_param("s", $_SERVER['PHP_SELF']);
-$query->execute();
-// Umgekehrt werden die Ergebnisspalten wieder Variablen zugewiesen.
-// Diese können dann bei der Ausgabe benutzt werden, siehe unten.
-$query->bind_result($name, $mail, $mobil, $eventart, $termin, $ort, $angebot, $musikwunsch, $zeitpunkt);
-// Falls es Fehler gibt, werden sie in $error vermerkt. Achtung, da da jetzt schon was
-// drin stehen kann, hängen wir uns hinten dran.
-if (!empty($query->error)) $error = "Insert Error: ".$error." / Query Error: ".$query->error;
-
-?>	
-	
-	<p>Lesen Sie unsere allgemeinen Geschäftsbegingungen im Impressum rechts auf der Seite.</p>
 	</form></p></br>
 	</div>
 	<div id="Sidebar">
@@ -102,8 +87,7 @@ if (!empty($query->error)) $error = "Insert Error: ".$error." / Query Error: ".$
 	?></p>
 	</div>
 	<?php
-	include("../java.php");
+	include("../Bilder/java.php");
 	?>
 </body>
 </html>
-
