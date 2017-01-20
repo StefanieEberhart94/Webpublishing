@@ -14,24 +14,30 @@
 	<div id="Ganz">
 	<img id="Gitarre" src="../Bilder/gitarre.JPG" alt="Gitarre">
 	<p id="Überschrift">Öffentliche Events von Mike and the Electronics:</p>
-	<p>z.B. Fasnet 2017 </br>
-	Zeitungsausschnitte, Bilder, Videos und Texte </br>
-	Leute sollen Posten können! </br>
-	Referenzen: Agenturen und besondere Auftritte, die jedes Jahr stattfinden!
-	</p>
-	</br></br></br></br>
+	<p>An diesen Terminen konnten Sie Mike and the Electronics Live erleben.</br>
+	Nachfolgend einige Eindrücke folgender Events:</p></br>
+	<table id="Tabelle">
+			<tr><td><img id="Note" src="../Bilder/Note.png" alt="Note"></td><td>Fasnet 2017</td></tr>
+			<tr><td><img id="Note" src="../Bilder/Note.png" alt="Note"></td><td>Hochzeitsmesse 2016</td></tr>
+	</table></br>
 	<div id="Balken"></div>
 	<!--Video, hier beispielhaft eingebaut.-->
-	<p id="FarbeLinks">Fasnet 2016: Ricardo mit Weißer Stern für Alcunar</p>
+	<p id="FarbeLinks">Fasnet Januar 2017: Ricardo mit Weißer Stern von Alcunar</p>
 	<iframe src="https://www.youtube.com/embed/AGRjnC7IkIM" allowfullscreen></iframe>
 	<img id="Zeitung" src="../Bilder/Zeitung.JPG" alt="Zeitungsartikel">
 	</br>	
 	<div id="Balken"></div>
-
-	</br>
-	<img id="Hochzeit" src="../Bilder/Hochzeit.JPG" alt="Hochzeit">
-	</br>
+	<p id="FarbeLinks">Hochzeitsmesse 2016</p>
+	<p>Ein schönes Event für die 7 Mann Galabesetzung von Mike and the Electronics.
+	Die Besucher der Hochzeitsmesse in Balingen am 22.Oktober 2016 waren hellauf begeistert von der Musik, die die Modenshow "Ein Traum von Weiß" unterstrichen hat.
+	</br>Die Band hat schon einige Buchungen an diesem Tag für Hochzeiten bekommen, sie kann aber immer noch an vielen Terminen gebucht werden.</p>
+	<img id="Hochzeit" src="../Bilder/Hochzeit.JPG" alt="Hochzeitsmesse 2016 in Balingen">
 	<div id="Balken"></div>
+	<p id="Überschrift">Regelmäßige Auftritte:</p>
+	<p>An diesen Terminen können Sie sich Live ein Bild von uns machen.</p></br>
+	<table id="Tabelle">
+			<tr><td><img id="Note" src="../Bilder/Note.png" alt="Note"></td><td>Hier finden Sie in Kürze öffentliche Termine, die in regelmäßigen Abständen stattfinden.</td></tr>
+	</table></br>
 	<!--Modal-->
 	<div id="myModal" class="modal">
 		<span class="close">&times;</span>
