@@ -202,16 +202,10 @@ label {
 	margin-left: 0;
 	margin-bottom: 0.2em;
 }
-#BuchenButton {
-	font-family: Candara;
-	font-weight: bold;
-}
 #BandBild {
-	width: 22em;
+	width: 20em;
 	float: right;
-	cursor: pointer;
 }
-#BandBild:hover {opacity: 0.7;}
 
 /*Biographie*/
 #Tabelle {
