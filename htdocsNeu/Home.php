@@ -46,6 +46,65 @@
 	<p id="Farbe">INTERESSIERT?</p>
 	<p id="Mittig">Dann Buchen Sie uns!</p>
 	<div id="Button"><a id="button" href="../Buchen/Buchen.php">Hier</br>Klicken!!!</a></div>
+<?php
+	// Aufbau der Datenbankverbindung
+$mysql = new mysqli("localhost", "root", "", "musik2017");
+// $error enthält Fehlerausgaben, falls etwas schief geht.
+$error = "";
+if (isset($_POST['button'])) { // Neuer Kommentar!
+   // Sicheres Belegen der Variablen aus dem Request.
+   $mail = trim(isset($_POST['mail'])?$_POST['mail']:"");
+   
+   // Prüfen, ob alles ausgefüllt wurde.
+   if (empty($mail) ) {
+      $error = "Bitte alle Felder ausfüllen!";
+   } else {
+      // Das eigentliche SQL Insert Statement als "Prepared Statement"
+      // Die Platzhalter (?) müssen noch mit Werten befüllt werden.
+      $insert = $mysql->prepare("INSERT INTO newsletter (url,
+                mail,zeitpunkt) VALUES (?,?,now())");
+      // Befüllen der Parameter ("ss" gibt an, dass alle zwei Parameter Strings sind.)
+      $insert->bind_param("ss", $_SERVER['PHP_SELF'], $mail);
+      // Statement an die Datenbank schicken.
+      $insert->execute();
+      // Ggf. Fehler in die $error-Variable übertragen.
+      if (!empty($insert->error)) $error = "DB ERROR: ".$insert->error;
+   }
+}
+?>
+
+<div id="comments">
+   <hr />
+   <?php
+      // Falls es Fehler gibt, hier ausgeben.
+      if (!empty($error)) {
+                     echo ("<p>".$error."</p>");
+      }
+   ?>
+   <form method="post" action="">
+      E-Mail: <input type="text" name="mail" length="20" /><br/>
+      
+      <input type="submit" name="button" value="Kommentar absenden!"/>
+   </form>
+   <hr />
+</div>
+
+<?php
+//Ausgabe von newslettern
+// Wieder wird das SQL Select Statement vorbereitet.
+$query = $mysql->prepare("SELECT mail,zeitpunkt FROM newsletter WHERE url=?");
+// Als Parameter wird die aktuelle URL der Webseite übergeben.
+$query->bind_param("s", $_SERVER['PHP_SELF']);
+$query->execute();
+// Umgekehrt werden die Ergebnisspalten wieder Variablen zugewiesen.
+// Diese können dann bei der Ausgabe benutzt werden, siehe unten.
+$query->bind_result($mail, $zeitpunkt);
+// Falls es Fehler gibt, werden sie in $error vermerkt. Achtung, da da jetzt schon was
+// drin stehen kann, hängen wir uns hinten dran.
+if (!empty($query->error)) $error = "Insert Error: ".$error." / Query Error: ".$query->error;
+
+
+?>
 	</div>
 	
 	<div id="Sidebar">	
