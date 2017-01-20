@@ -25,6 +25,12 @@
 	<p id="FarbeLinks">Fasnet 2016: Ricardo mit Weißer Stern für Alcunar</p>
 	<iframe src="https://www.youtube.com/embed/AGRjnC7IkIM" allowfullscreen></iframe>
 	<img id="Zeitung" src="../Bilder/Zeitung.JPG" alt="Zeitungsartikel">
+	</br>	
+	<div id="Balken"></div>
+
+	</br>
+	<img id="Hochzeit" src="../Bilder/Hochzeit.JPG" alt="Hochzeit">
+	</br>
 	<div id="Balken"></div>
 	<!--Modal-->
 	<div id="myModal" class="modal">
