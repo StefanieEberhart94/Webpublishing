@@ -21,7 +21,7 @@
 			<tr><td><img id="Note" src="../Bilder/Note.png" alt="Note"></td><td>Hochzeitsmesse 2016</td></tr>
 	</table></br>
 	<div id="Balken"></div>
-	<!--Video, hier beispielhaft eingebaut.-->
+	<!--Video, hier beispielhaft eingebaut. Die folgenden Events werden nur als Beispiel verwendet.-->
 	<p id="FarbeLinks">Fasnet Januar 2017: Ricardo mit Weißer Stern von Alcunar</p>
 	<iframe src="https://www.youtube.com/embed/AGRjnC7IkIM" allowfullscreen></iframe>
 	<img id="Zeitung" src="../Bilder/Zeitung.JPG" alt="Zeitungsartikel">
