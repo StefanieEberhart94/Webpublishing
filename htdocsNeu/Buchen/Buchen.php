@@ -11,20 +11,28 @@
 	<?php
 	include("../nav.php");
 	?>
-	<div id="Halb"></br>
-	<p id="Farbe">Buchungsanfrage:</p>
-	<p><form method="post" action="/formmail.php" ></p>
-	<p><label>Name<br><input type="text" name="Name"></label></br></p>
-	<p><label>Email<br><input type="text" name="Mail"></label></br></p>
-	<p><label>Telefon / Mobil<br><input type="text" name="Mobil"></label></br></p>
-	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Art des Events</br><textarea id="Buchen" name="" cols="50" rows="4"></textarea></br></p>
-	<p><label>Wunschtermin<br><input type="text" name="Termin"></label></br></p>
-	<p><label>Ort der Veranstaltung<br><input type="text" name="Ort"></label></br></p>
-	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uhrzeit der Veranstaltung und ungefähre Dauer</br><textarea name="" cols="50" rows="4"></textarea></br></p>
-	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Besetzungswunsch und/oder weitere Wünsche</br><textarea name="" cols="50" rows="4"></textarea></br></p>
-	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wünsche: Musikwünsche und/oder Stilrichtungen</br><textarea name="" cols="50" rows="4"></textarea></br></p>
-	<input type="submit" value="Buchung bestätigen.">
-	<p>Lesen Sie unsere allgemeinen Geschäftsbegingungen im Impressum rechts auf der Seite für weitere Informationen.</p>
+	<div id="Halb">
+	<p id="Überschrift">Hier können Sie uns buchen:</p>
+	
+	<img id="BandBild" src="../Bilder/Band.JPG" alt="Die Band">
+		<!-- The Modal -->
+	<div id="myModal" class="modal">
+	<span class="close">&times;</span>
+	<img class="modal-content-groß" id="img01">
+	<div id="caption"></div></div>
+	
+	<p><form method="post" action="../formmail.php">
+	<label><p class="TextBuchen">Name</p><input id="Leer" type="text" name="Name"></label></br>
+	<label><p class="TextBuchen">Email</p><input id="Leer" type="text" name="Mail"></label></br>
+	<label><p class="TextBuchen">Telefon / Mobil</p><input id="Leer" type="text" name="Mobil"></label></br>
+	<p class="TextBuchen">Art des Events</p><textarea id="Leer" name="" cols="22" rows="3"></textarea></br>
+	<label><p class="TextBuchen">Wunschtermin</p><input id="Leer" type="text" name="Termin"></label></br>
+	<label><p class="TextBuchen">Ort der Veranstaltung</p><input id="Leer" type="text" name="Ort"></label></br>
+	<p class="TextBuchen">Uhrzeit der Veranstaltung und ungefähre Dauer</p><textarea id="Leer" name="" cols="22" rows="3"></textarea></br>
+	<p class="TextBuchen">Besetzungswunsch und/oder weitere Wünsche</p><textarea id="Leer" name="" cols="22" rows="3"></textarea></br>
+	<p class="TextBuchen">Wünsche: Musikwünsche und/oder Stilrichtungen</p><textarea id="Leer" name="" cols="22" rows="3"></textarea></br>
+	<input id="BuchenButton" type="submit" value="Buchung bestätigen.">
+	<p>Lesen Sie unsere allgemeinen Geschäftsbegingungen im Impressum rechts auf der Seite.</p>
 	</form></p></br>
 	</div>
 	<div id="Sidebar">
@@ -39,5 +47,8 @@
 	include("../Kalender/Kalender3.php");
 	?></p>
 	</div>
+	<?php
+	include("../java.php");
+	?>
 </body>
 </html>
