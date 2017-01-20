@@ -62,8 +62,8 @@ if (isset($_POST['button'])) { // Neuer Kommentar!
 	  E-Mail:</br> <input type="text" name="mail" length="20" /><br/>
 	  Telefon / Mobil:</br> <input type="text" name="mobil" length="20" /><br/>
 	  Ort der Veranstaltung:</br> <input type="text" name="ort" length="20" /><br/>
-	  Eventart (z.B. Hochzeit, Fasnet, ...):</br> <textarea type="text" name="eventart" cols="60" rows="5"></textarea><br/>
 	  Termin (Datum, Start und falls bekannt Länge der Veranstaltung):</br> <textarea type="text" name="termin" cols="60" rows="5"></textarea><br/>
+	  Eventart (z.B. Hochzeit, Fasnet, ...):</br> <textarea type="text" name="eventart" cols="60" rows="5"></textarea><br/>
 	  Besetzungswunsch und/oder weitere Wünsche:</br> <textarea type="text" name="angebot" cols="60" rows="5"></textarea><br/>
 	  Wünsche: Stilrichtungen und Songtitel:</br> <textarea type="text" name="musikwunsch" cols="60" rows="5"></textarea><br/>	  
       <input type="submit" name="button" value="Buchungsanfrage bestätigen!"/>
