@@ -53,8 +53,8 @@
 	<p id="Seitentext"><span class="fett">Newsletter</span></br>
 	Abonnieren Sie unseren Newsletter, um die neuesten öffentliche Termine zu erhalten.
 	<form method="post" action="/formmail.php">
-	<p><label>E-Mail:<br><input type="text" name="Mail"></label></p>
-	<input type="submit" value="Newsletter abonnieren">
+	<p><label>E-Mail:</br><input id="Leer" type="text" name="Mail"></label></p>
+	<input id="AboButton" type="submit" value="Newsletter abonnieren">
 	</form></p>
 	
 	<!--Impressum-->
@@ -62,10 +62,11 @@
 	<span class="schwarz">Mike and the Electronics</span></br>Michael Eberhart</br>Tel. 07428/3417</br>
 	michael.eberhart1@gmx.de</br></br>Bei Buchungen gelten unsere</br> 
 	<a href="../agb.pdf"><img id="pdf" src="../Bilder/pdf.png" alt="Allgemeine Geschäftsbedingungen">Allgemeinen Geschäftsbedingungen.</a></p>
-	</br></p>
+	</br>
 	
 	<!--Aktuelles-->
 	<p id="Seitentext"><span class="fett">Aktuelles</span></br>Momentan sind noch keine Termine für 2017 bekannt.</br></br></br>
-	</div></p>
+	</p></div>
+	
 </body>
 </html>
