@@ -1,7 +1,7 @@
 *{
 	margin: 1em 4% 3em 4%;
 }
-/*Navigation und Titelbild*/
+/*CSS für die Navigation und das Titelbild*/
 body {
 	background: url("Bilder/Holz2.png");
 }
@@ -58,7 +58,8 @@ li{
 	padding-top: 1em;
 }
  
-/*Textfelder und Text allgemein*/
+/*CSS, dass für mehrere Seiten verwendet wird*/
+/*Textfelder*/
 #Ganz {
 	background-color: #FFFACD;
 	padding: 0em 1em 1em 1em;
@@ -80,6 +81,7 @@ li{
 	margin-left: 0;
 	padding: 0;
 }
+/*Text*/
 p {
 	font-family: Candara;
 	font-size: 1.1em;
@@ -127,13 +129,6 @@ p {
 	margin-bottom: 0em;
 	text-align: center;
 }
-#FarbeLinks {
-	font-family: Candara;
-	font-weight: bold;
-	font-size: 1.3em;
-	color: #800000;
-	margin-bottom: 0em;
-}
 #Mittig {
 	font-family: Candara;
 	font-size: 1.2em;
@@ -141,16 +136,21 @@ p {
 	margin-bottom: 0em;
 	text-align: center;
 }
-#Kursiv {
-	font-family: Candara;
-	font-size: 1.0em;
-	margin-bottom: 0em;
-	font-style: italic;
-}
 #Seitentext {
 	font-family: Candara;
 	font-size: 1.0em;
 	margin-bottom: 0em;
+}
+/*Anderes*/
+#Tabelle {
+	font-family: Candara;
+	font-size: 1.1em;
+	margin-top: 0em;
+	margin-left: 0.7em;
+	margin-bottom: 0em;
+}
+td {
+	padding: 0.5em;
 }
 #Button {
     height: 50px;
@@ -169,6 +169,7 @@ p {
 	font-size: 1.2em;
 }
 
+/*CSS, dass nur auf einzelnen Seiten verwendet wird*/
 /*Home*/
 #Note {
 	width: 1.2em;
@@ -191,24 +192,8 @@ label {
 	font-family: Candara;
 	margin-bottom: 0
 	}
-	
-/*Buchen*/
-#BandBild {
-	width: 20em;
-	float: right;
-}
 
 /*Biographie*/
-#Tabelle {
-	font-family: Candara;
-	font-size: 1.1em;
-	margin-top: 0em;
-	margin-left: 0.7em;
-	margin-bottom: 0em;
-}
-td {
-	padding: 0.5em;
-}
 #BioBild {
 	width: 15em;
 	float: right;
@@ -217,6 +202,12 @@ td {
 #BioBild:hover {opacity: 0.7;}
 
 /*Musik*/
+#Kursiv {
+	font-family: Candara;
+	font-size: 1.0em;
+	margin-bottom: 0em;
+	font-style: italic;
+}
 #MusikGrafik {
 	height: 20em;
 	width: 20em;
@@ -226,15 +217,19 @@ td {
 }
 #MusikGrafik:hover {opacity: 0.7;}
 
+/*Buchen*/
+#BandBild {
+	width: 20em;
+	float: right;
+}
+
 /*Events*/
-#Balken {
-	width: 50em;
-	height: 0.1em;
-	background-color: #800000;
-	display: block;
-	margin: auto;
-	margin-top: 2em;
-	margin-bottom: 2em;
+#FarbeLinks {
+	font-family: Candara;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #800000;
+	margin-bottom: 0em;
 }
 iframe {
 	width: 560px; 
@@ -265,8 +260,8 @@ iframe {
 #Hochzeit:hover {opacity: 0.7;
 }
 
-/*Popup Bild*/
-/* The Modal (background) */
+/*CSS für alle Popup Bilder auf den Seiten*/
+/*The Modal(background)*/
 .modal {
     display: none; 
     position: fixed;
@@ -278,21 +273,21 @@ iframe {
     height: 80%;  
     background-color: rgba(30,0,0,0.9); 
 }
-/* Modal Content (image) */
+/*Modal Content(image)*/
 .modal-content {
     margin: auto;
     display: block;
     width: 30%;
     max-width: 700px;
 }
-/* Modal Content für große Bilder (bei Events) */
+/*Modal Content für große Bilder (bei Events)*/
 .modal-content-groß {
     margin: auto;
     display: block;
     width: 100%;
     max-width: 700px;
 }
-/* Caption of Modal Image */
+/*Caption of Modal Image*/
 #caption {
     margin: auto;
     display: block;
@@ -311,7 +306,7 @@ iframe {
     from {transform:scale(0)} 
     to {transform:scale(1)}
 }
-/* The Close Button */
+/*The Close Button*/
 .close {
     position: absolute;
     top: 15px;
@@ -327,14 +322,14 @@ iframe {
     text-decoration: none;
     cursor: pointer;
 }
-/* 100% Image Width on Smaller Screens */
+/*100% Image Width on Smaller Screens*/
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 50%;
     }
 }
 
-/*Kalender*/
+/*CSS für den Kalender*/
 .calender {
     font-family:Candara;
     font-size:0.8em;
