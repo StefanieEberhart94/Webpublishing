@@ -20,6 +20,24 @@ nav {
 	margin: auto;
 	margin-top: 5em;
 }
+.active {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-shadow: 2px 2px #600000;
+}
+#Navigation a {
+	font-size: 1.2em;
+	color: #FFFACD;
+	text-decoration: none;
+	text-align: center;
+	background-color:#800000;
+}
+#Navigation a:hover {
+	color: #FFFACD;
+	text-align: center;
+	background-color:#800000;
+	text-decoration: underline overline;
+}
 h1 {
 	font-family: Agency FB;
 	font-size: 36px;
@@ -39,26 +57,7 @@ li{
 	margin: 0;
 	padding-top: 1em;
 }
-.active {
-	font-size: 1.5em;
-	font-weight: bold;
-	text-shadow: 2px 2px #600000;
-}
-#Navigation a {
-	font-size: 1.2em;
-	color: #FFFACD;
-	text-decoration: none;
-	text-align: center;
-	background-color:#800000;
-}
-#Navigation a:hover {
-	color: #FFFACD;
-	text-align: center;
-	background-color:#800000;
-	text-decoration: underline overline;
-}
-
-  
+ 
 /*Textfelder und Text allgemein*/
 #Ganz {
 	background-color: #FFFACD;
@@ -169,13 +168,8 @@ p {
     font-family: Candara;
 	font-size: 1.2em;
 }
-hr {
-	border:1px solid #800000;
-}
-
 
 /*Home*/
-
 #Note {
 	width: 1.2em;
 	height: 1.2em;
@@ -190,14 +184,14 @@ label {
 	font-family: Candara;
 	margin: 0;
 }
-#leer {
-	margin-bottom: 0.5em;
-	margin-top: 0;
+#Leer {
+	margin: 0;
 }
 #AboButton {
 	font-family: Candara;
-	margin-bottom: 0;
+	margin-bottom: 0
 	}
+	
 /*Buchen*/
 #BandBild {
 	width: 20em;
@@ -222,7 +216,6 @@ td {
 }
 #BioBild:hover {opacity: 0.7;}
 
-
 /*Musik*/
 #MusikGrafik {
 	height: 20em;
@@ -234,6 +227,15 @@ td {
 #MusikGrafik:hover {opacity: 0.7;}
 
 /*Events*/
+#Balken {
+	width: 50em;
+	height: 0.1em;
+	background-color: #800000;
+	display: block;
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
 iframe {
 	width: 560px; 
 	height: 315px;
@@ -245,8 +247,8 @@ iframe {
 	margin-top: 3em;
 	cursor: pointer;
 }
-#Zeitung:hover {opacity: 0.7;}
-
+#Zeitung:hover {opacity: 0.7;
+}
 #Gitarre {
 	width: 20em;
 	float: right;
@@ -255,13 +257,13 @@ iframe {
 }
 #Gitarre:hover {opacity: 0.7;}
 
-/*Popup Bild*/
 #Hochzeit {
 	width: 30em;
 	cursor: pointer;
 	margin-top: 2em;
 }
-#Hochzeit:hover {opacity: 0.7;}
+#Hochzeit:hover {opacity: 0.7;
+}
 
 /*Popup Bild*/
 /* The Modal (background) */
@@ -276,7 +278,6 @@ iframe {
     height: 80%;  
     background-color: rgba(30,0,0,0.9); 
 }
-
 /* Modal Content (image) */
 .modal-content {
     margin: auto;
@@ -302,17 +303,14 @@ iframe {
     padding: 10px 0;
     height: 150px;
 }
-
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
     to {-webkit-transform:scale(1)}
 }
-
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
 }
-
 /* The Close Button */
 .close {
     position: absolute;
@@ -323,22 +321,18 @@ iframe {
     font-weight: bold;
     transition: 0.3s;
 }
-
 .close:hover,
 .close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
-
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 50%;
     }
 }
-
-
 
 /*Kalender*/
 .calender {
@@ -357,8 +351,6 @@ iframe {
 	text-align: center;
 	
 }
-
-
 * html .calender,
 * + html .calender {
     width:282px;
@@ -374,8 +366,7 @@ iframe {
     line-height: 30px;
     text-align: center;
 	color: #800000;
-	margin: 0 0.3em 0 0.3em;
-	
+	margin: 0 0.3em 0 0.3em;	
 }
 .day.headline {
     background:#800000;
@@ -390,7 +381,6 @@ iframe {
 	padding: 0em;
 	width:24px;
     height:24px;
-	
 }
 .clear {
     clear:left;
