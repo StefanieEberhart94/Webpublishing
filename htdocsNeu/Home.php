@@ -4,7 +4,7 @@
 	<title>Mike and the Electronics</title>
 	<meta name="author" content="Stefanie Eberhart, Bettina Haberstroh" />
 	<meta name="date" content="2017-01-22" />
-	<meta name="keywords" content="Mike and the Electronics, Musiker, Eventmanager, Beratung, Alleinunterhalter, Band"/>
+	<meta name="keywords" content="Mike and the Electronics, Musiker, Home, Eventmanager, Beratung, Alleinunterhalter, Band"/>
 	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 </head>
 <body>
