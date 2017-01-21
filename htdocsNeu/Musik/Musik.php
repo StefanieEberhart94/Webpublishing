@@ -3,8 +3,8 @@
 <head> 
 	<title>Alleinunterhalter</title>
 	<meta name="author" content="Stefanie Eberhart, Bettina Haberstroh" />
-	<meta name="date" content="2016-11-20" />
-	<meta name="keywords" content="Musik"/>
+	<meta name="date" content="2017-01-22" />
+	<meta name="keywords" content="Mike and the Electronics, Musiker, Stilrichtungen, Bandformation, Alleinunterhalter, Band"/>
 	<link type="text/css" rel="stylesheet" href="../stylesheet.css"/>
 </head>
 <body>
