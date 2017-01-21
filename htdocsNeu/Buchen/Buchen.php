@@ -17,7 +17,7 @@
 		z.B. weil gewisse Informationen fehlen, tragen Sie bitte ein "-" oder einen einzelnen Buchstaben ein.</br></br>
 		Sobald Sie auf Buchungsanfrage bestätigen drücken und sich alle Felder leeren, wurde die Anfrage an uns versendet.
 		Die Bearbeitung kann einige Tage dauern. Wir bitten um Verständnis.</br></br>
-		Lesen Sie unsere allgemeinen Geschäftsbegingungen (Im Impressum rechts)!</p></br></br>
+		Lesen Sie unsere allgemeinen Geschäftsbegingungen (Unter Kontakt rechts)!</p></br></br>
 	<img id="BandBild" src="../Bilder/Band.JPG" alt="Die Band">
 	
 <!--Hier wird "Abspeichern von Formulardate" aus der Vorlesung in angepasster Form als Buchungsformular verwendet.-->
@@ -74,9 +74,10 @@ if (isset($_POST['button'])) { // Neuer Kommentar!
 </div>
 	</form></p></br>
 	</div>
+	
 	<div id="Sidebar">
-	<!--Impressum-->
-	<p id="Seitentext"><span class="fett"> Impressum</span></br></br>
+	<!--Kontakt-->
+	<p id="Seitentext"><span class="fett">Kontakt</span></br>
 	<span class="schwarz">Mike and the Electronics</span></br>Michael Eberhart</br>Tel. 07428/3417</br>
 	michael.eberhart1@gmx.de</br></br>Bei Buchungen gelten unsere</br> 
 	<a href="../agb.pdf"><img id="pdf" src="../Bilder/pdf.png" alt="Allgemeine Geschäftsbedingungen">Allgemeinen Geschäftsbedingungen.</a></p></br>
@@ -85,9 +86,7 @@ if (isset($_POST['button'])) { // Neuer Kommentar!
 	<?php
 	include("../Kalender/Kalender3.php");
 	?></p>
-	</div>
-	<?php
-	include("../Bilder/java.php");
-	?>
+	<!--Impressum-->
+	<p id="Seitentext"><span class="fett">Design, Programmierung & Hosting:</span></br>Stefanie Eberhart und Bettina Haberstroh</p></br></br></div>
 </body>
 </html>
