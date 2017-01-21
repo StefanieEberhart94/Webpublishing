@@ -80,7 +80,7 @@
 	<p id="Seitentext"><span class="fett">Kontakt</span></br>
 	<span class="schwarz">Mike and the Electronics</span></br>Michael Eberhart</br>Tel. 07428/3417</br>
 	michael.eberhart1@gmx.de</br></br>Bei Buchungen gelten unsere</br> 
-	<a href="../agb.pdf"><img id="pdf" src="../Bilder/pdf.png" alt="Allgemeine Geschäftsbedingungen">Allgemeinen Geschäftsbedingungen.</a></p></br>
+	<a href="../Bilder/agb.pdf"><img id="pdf" src="../Bilder/pdf.png" alt="Allgemeine Geschäftsbedingungen">Allgemeinen Geschäftsbedingungen.</a></p></br>
 	
 	<!--Kalender-->
 	<p id="Seitentext"><span class="fett"> Kalender</span></br></br>
