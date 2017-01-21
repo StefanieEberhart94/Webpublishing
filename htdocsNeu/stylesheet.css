@@ -169,7 +169,9 @@ p {
     font-family: Candara;
 	font-size: 1.2em;
 }
-
+hr {
+	border:1px solid #800000;
+}
 
 
 /*Home*/
@@ -188,20 +190,15 @@ label {
 	font-family: Candara;
 	margin: 0;
 }
-#Leer {
-	margin: 0;
+#leer {
+	margin-bottom: 0.5em;
+	margin-top: 0;
 }
 #AboButton {
 	font-family: Candara;
-	margin-bottom: 0
+	margin-bottom: 0;
 	}
 /*Buchen*/
-.TextBuchen {
-	font-family: Candara;
-	font-size: 1em;
-	margin-left: 0;
-	margin-bottom: 0.2em;
-}
 #BandBild {
 	width: 20em;
 	float: right;
@@ -237,15 +234,6 @@ td {
 #MusikGrafik:hover {opacity: 0.7;}
 
 /*Events*/
-#Balken {
-	width: 50em;
-	height: 0.1em;
-	background-color: #800000;
-	display: block;
-	margin: auto;
-	margin-top: 2em;
-	margin-bottom: 2em;
-}
 iframe {
 	width: 560px; 
 	height: 315px;
@@ -266,6 +254,7 @@ iframe {
 	margin-top: 2em;
 }
 #Gitarre:hover {opacity: 0.7;}
+
 /*Popup Bild*/
 #Hochzeit {
 	width: 30em;
