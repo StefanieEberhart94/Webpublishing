@@ -46,23 +46,21 @@
 	<p id="Farbe">INTERESSIERT?</p>
 	<p id="Mittig">Dann Buchen Sie uns!</p>
 	<div id="Button"><a id="button" href="../Buchen/Buchen.php">Hier</br>Klicken!!!</a></div>
+		
+	<div id="Sidebar">	
+	<!--Newsletter-->
+	<p id="Seitentext"><span class="fett">Newsletter</span></br>
+	Abonnieren Sie unseren Newsletter, um die neuesten öffentliche Termine zu erhalten.</p>
+	<p id="Seitentext">E-Mail:</p>
 	
-
-<?php
-	// Aufbau der Datenbankverbindung
+	<?php
 $mysql = new mysqli("localhost", "root", "", "musik2017");
-// $error enthält Fehlerausgaben, falls etwas schief geht.
 $error = "";
-if (isset($_POST['button'])) { // Neuer Kommentar!
-   // Sicheres Belegen der Variablen aus dem Request.
+if (isset($_POST['button'])) { 
    $mail = trim(isset($_POST['mail'])?$_POST['mail']:"");
-   
-   // Prüfen, ob alles ausgefüllt wurde.
-   if (empty($mail) ) {
-      $error = "Bitte alle Felder ausfüllen!";
-   } else {
-      // Das eigentliche SQL Insert Statement als "Prepared Statement"
-      // Die Platzhalter (?) müssen noch mit Werten befüllt werden.
+	  if (empty($mail) ) {
+      $error = "Bitte geben Sie ihr E-Mailadresse ein";} 
+	  else {   
       $insert = $mysql->prepare("INSERT INTO newsletter (url,
                 mail,zeitpunkt) VALUES (?,?,now())");
       // Befüllen der Parameter ("ss" gibt an, dass alle zwei Parameter Strings sind.)
@@ -75,41 +73,24 @@ if (isset($_POST['button'])) { // Neuer Kommentar!
 }
 ?>
 
-<div id="comments">
-   <hr />
+<div id="newsletter">
    <?php
       // Falls es Fehler gibt, hier ausgeben.
-      if (!empty($error)) {
-                     echo ("<p>".$error."</p>");
-      }
-   ?>
+      if (!empty($error)) {echo ("<p>".$error."</p>");}
+	?>
    <form method="post" action="">
-      E-Mail: <input type="text" name="mail" length="20" /><br/>
-      
-      <input type="submit" name="button" value="Kommentar absenden!"/>
+   <input id="leer" type="text" name="mail" length="20" /></br>
+   <input  id="AboButton" type="submit" name="button" value="Newsletter abonnieren!"/>
    </form>
-   <hr />
+   
 </div>
-</div>
-	
-	<div id="Sidebar">	
-	<!--Newsletter-->
-	<p id="Seitentext"><span class="fett">Newsletter</span></br>
-	Abonnieren Sie unseren Newsletter, um die neuesten öffentliche Termine zu erhalten.
-	<form method="post" action="/formmail.php">
-	<p><label>E-Mail:</br><input id="Leer" type="text" name="Mail"></label></p>
-	<input id="AboButton" type="submit" value="Newsletter abonnieren">
-	</form></p>
-	
 	<!--Kontakt-->
 	<p id="Seitentext"><span class="fett"> Kontakt</span></br>
 	<span class="schwarz">Mike and the Electronics</span></br>Michael Eberhart</br>Tel. 07428/3417</br>
 	michael.eberhart1@gmx.de</br></br>Bei Buchungen gelten unsere</br> 
 	<a href="../agb.pdf"><img id="pdf" src="../Bilder/pdf.png" alt="Allgemeine Geschäftsbedingungen">Allgemeinen Geschäftsbedingungen.</a></p></br>
-	
 	<!--Aktuelle Informationen-->
 	<p id="Seitentext"><span class="fett">Aktuelles</span></br>Momentan sind noch keine Termine für 2017 bekannt.</p></br>
-	
 	<!--Impressum-->
 	<p id="Seitentext"><span class="fett">Design, Programmierung & Hosting:</span></br>Stefanie Eberhart und Bettina Haberstroh</p></br></br></div>
 </body>
