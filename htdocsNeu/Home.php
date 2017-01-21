@@ -65,7 +65,7 @@ if (isset($_POST['button'])) {
 }
 ?>
 
-<div id="comments">
+<div>
    <?php
       if (!empty($error)) {
                      echo ("<p>".$error."</p>");}
