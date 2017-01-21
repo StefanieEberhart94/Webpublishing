@@ -46,6 +46,8 @@
 	<p id="Farbe">INTERESSIERT?</p>
 	<p id="Mittig">Dann Buchen Sie uns!</p>
 	<div id="Button"><a id="button" href="../Buchen/Buchen.php">Hier</br>Klicken!!!</a></div>
+	
+
 <?php
 	// Aufbau der Datenbankverbindung
 $mysql = new mysqli("localhost", "root", "", "musik2017");
@@ -88,24 +90,7 @@ if (isset($_POST['button'])) { // Neuer Kommentar!
    </form>
    <hr />
 </div>
-
-<?php
-//Ausgabe von newslettern
-// Wieder wird das SQL Select Statement vorbereitet.
-$query = $mysql->prepare("SELECT mail,zeitpunkt FROM newsletter WHERE url=?");
-// Als Parameter wird die aktuelle URL der Webseite übergeben.
-$query->bind_param("s", $_SERVER['PHP_SELF']);
-$query->execute();
-// Umgekehrt werden die Ergebnisspalten wieder Variablen zugewiesen.
-// Diese können dann bei der Ausgabe benutzt werden, siehe unten.
-$query->bind_result($mail, $zeitpunkt);
-// Falls es Fehler gibt, werden sie in $error vermerkt. Achtung, da da jetzt schon was
-// drin stehen kann, hängen wir uns hinten dran.
-if (!empty($query->error)) $error = "Insert Error: ".$error." / Query Error: ".$query->error;
-
-
-?>
-	</div>
+</div>
 	
 	<div id="Sidebar">	
 	<!--Newsletter-->
@@ -116,16 +101,16 @@ if (!empty($query->error)) $error = "Insert Error: ".$error." / Query Error: ".$
 	<input id="AboButton" type="submit" value="Newsletter abonnieren">
 	</form></p>
 	
-	<!--Impressum-->
-	<p id="Seitentext"><span class="fett"> Impressum</span></br>
+	<!--Kontakt-->
+	<p id="Seitentext"><span class="fett"> Kontakt</span></br>
 	<span class="schwarz">Mike and the Electronics</span></br>Michael Eberhart</br>Tel. 07428/3417</br>
 	michael.eberhart1@gmx.de</br></br>Bei Buchungen gelten unsere</br> 
-	<a href="../agb.pdf"><img id="pdf" src="../Bilder/pdf.png" alt="Allgemeine Geschäftsbedingungen">Allgemeinen Geschäftsbedingungen.</a></p>
-	</br>
+	<a href="../agb.pdf"><img id="pdf" src="../Bilder/pdf.png" alt="Allgemeine Geschäftsbedingungen">Allgemeinen Geschäftsbedingungen.</a></p></br>
 	
-	<!--Aktuelles-->
-	<p id="Seitentext"><span class="fett">Aktuelles</span></br>Momentan sind noch keine Termine für 2017 bekannt.</br></br></br>
-	</p></div>
+	<!--Aktuelle Informationen-->
+	<p id="Seitentext"><span class="fett">Aktuelles</span></br>Momentan sind noch keine Termine für 2017 bekannt.</p></br>
 	
+	<!--Impressum-->
+	<p id="Seitentext"><span class="fett">Design, Programmierung & Hosting:</span></br>Stefanie Eberhart und Bettina Haberstroh</p></br></br></div>
 </body>
 </html>
