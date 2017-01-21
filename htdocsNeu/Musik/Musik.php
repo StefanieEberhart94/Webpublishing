@@ -7,23 +7,14 @@
 	<meta name="keywords" content="Mike and the Electronics, Musiker, Stilrichtungen, Bandformation, Alleinunterhalter, Band, Musik"/>
 	<link type="text/css" rel="stylesheet" href="../stylesheet.css"/>
 </head>
+
 <body>
 	<?php
 	include("../nav.php");
 	?>
-	
-	<!--Grafik Stilrichtungen-->
 	<div id="Ganz"><p id="Überschrift">Stilrichtungen:</p>
 	<img id="MusikGrafik" src="../Bilder/Stilrichtungen.JPG" alt="Stilrichtungen">
-	</div>
-	<!-- The Modal -->
-	<div id="myModal" class="modal">
-	<span class="close">&times;</span>
-	<img class="modal-content" id="img01">
-	<div id="caption"></div></div>
-	</br></br>
 	
-	<!-- Text-->
 	<p id="Fett">1 Mann Entertainer - 7 Mann Galabesetzung</p>
 	<p>Oldies; Schlager; Charts; 80`s; 90`s; Funk & Soul; Latin; Rock</br> 
 	-->Zusätzlich buchbar sind 30-minütige Showblöcke aus :  Schlager; Pop und Neue Deutsche Welle</p>
@@ -43,10 +34,17 @@
 	<p id="Farbe">Haben Sie das Richtige Gefunden?</p></br>
 	<p id="Mittig">Dann Buchen Sie uns!</p>
 	<div id="Button"><a id="button" href="../Buchen/Buchen.php">Hier</br>Klicken!!!</a></div>
-
 	</div>
+	
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img01">
+		<div id="caption"></div>
+	</div>
+	
 	<?php
-	include("../java.php");
+		include("../Bilder/java.php");
 	?>
 </body>
 </html>
