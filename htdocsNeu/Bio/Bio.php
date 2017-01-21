@@ -39,7 +39,6 @@
 	
 	<?php
 		include("../Bilder/java.php");
-	?>
-	
+	?>	
 </body>
 </html>
