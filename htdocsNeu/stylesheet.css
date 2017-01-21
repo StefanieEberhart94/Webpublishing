@@ -185,12 +185,13 @@ label {
 	font-family: Candara;
 	margin: 0;
 }
-#Leer {
-	margin: 0;
+#leer {
+	margin-bottom: 0.5em;
+	margin-top: 0;
 }
 #AboButton {
 	font-family: Candara;
-	margin-bottom: 0
+	margin-bottom: 0;
 	}
 
 /*Biographie*/
