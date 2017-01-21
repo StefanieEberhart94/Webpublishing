@@ -231,6 +231,9 @@ label {
 	color: #800000;
 	margin-bottom: 0em;
 }
+hr {
+	border: 1px solid #800000;
+}
 iframe {
 	width: 560px; 
 	height: 315px;
@@ -249,6 +252,7 @@ iframe {
 	float: right;
 	cursor: pointer;
 	margin-top: 2em;
+	margin-bottom: 0;
 }
 #Gitarre:hover {opacity: 0.7;}
 
